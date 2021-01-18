@@ -15,7 +15,7 @@ export const getPosts = async (request, response) => {
 }
 
 // create post function
-export const createPost = (request, response) => {
+export const createPost = async (request, response) => {
     const post = request.body;
     const newPost = new PostMsg(post);
 

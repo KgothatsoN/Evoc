@@ -1,12 +1,12 @@
 import React from 'react';
 import userStyles from './styles';
 
-//Create Form component
-const Form = () => {
+//Create post component
+const Post = () => {
     const classes = userStyles();
     return (
-        <h1>Form</h1>
+            <h1>Post</h1>
     );
 }
 
-export default Form;
+export default Post;
