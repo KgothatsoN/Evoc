@@ -1,9 +1,9 @@
 import React from 'react';
-import userStyles from './styles';
+import useStyles from './styles';
 
 //Create post component
 const Post = () => {
-    const classes = userStyles();
+    const classes = useStyles();
     return (
             <h1>Post</h1>
     );
