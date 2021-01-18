@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, AppBar, Typography, Grow, Grid} from '@material-ui/core';
 import envoc from './images/envoc.png';
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
 import userStyles from './styles';
+import {useDispatch, userDispatch} from 'react-redux'
+import {getPosts} from './actions/posts';
 
 //Material UI App
 const App = () => {
     const classes = userStyles();
+    const dispatch = useDispatch();
 
+    useEffect(() =>{
+        dispatch(getPosts());
+    }, [dispatch]);
 
     return (
         <Container maxWidth="lg">

@@ -1,10 +1,14 @@
 import React from 'react';
 import Post from './Post/Post'
-import userStyles from './styles';
+import useStyles from './styles';
+import {useSelector} from 'react-redux'
 
 //Create posts component
 const Posts = () => {
-    const classes = userStyles();
+    const classes = useStyles();
+    const posts = useSelector((state) => state.posts);
+    console.log(posts);
+    
     return (
         <>
             <h1>Posts</h1>
