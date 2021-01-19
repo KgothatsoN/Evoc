@@ -49,4 +49,8 @@ export default makeStyles({
       display: 'flex',
       justifyContent: 'space-between',
     },
+    // star:{
+    //   paddingRight: '1px',
+      
+    // }
 });

@@ -48,3 +48,13 @@ export const updatePost = async (request, response) => {
 
     response.json(updatedPost);
 }
+
+export const admirePost = async (request, response) => {
+    const {id} = request.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) return response.status(404).send('Post Not Found!');
+    const post = await PostMsg.findById(id);
+    const updatedPost = await PostMsg.findByIdAndUpdate(id, {admireCount: post.admireCount +1}, {new: true});
+    
+    response.json(updatedPost);
+}

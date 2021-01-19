@@ -1,11 +1,11 @@
 import React from 'react';
 import {Card, CardActions, CardContent, CardMedia, Button, Typography} from '@material-ui/core';
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import DeleteIcon from '@material-ui/icons/Delete';
+import StarsIcon from '@material-ui/icons/Stars';
 import moment from 'moment';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import useStyles from './styles';
-import {deletePost} from '../../../actions/posts'
+import {deletePost, admirePost} from '../../../actions/posts'
 import {useDispatch} from 'react-redux';
 
 //Create post component
@@ -30,7 +30,7 @@ const Post = ({post, setCurrentId}) => {
                 <Typography variant="body2" color="textSecondary" component="p">{post.message}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button size="small" color="primary" onClick={() => {}}><ThumbUpAltIcon fontSize="small" /> Like {post.likeCount} </Button>
+                <Button size="small" color="primary" onClick={() => dispatch(admirePost(post._id))}><StarsIcon fontSize="small" /> &nbsp; Admire {post.admireCount} </Button>
                 <Button size="small" color="primary" onClick={() => dispatch(deletePost(post._id))}><DeleteIcon fontSize="small" /> Delete</Button>
             </CardActions>
         </Card>

@@ -23,6 +23,15 @@ export const createPost =(post) => async (dispatch) =>{
     }
 }
 
+export const admirePost = (id) => async (dispatch) =>{
+    try {
+        const {data} = await api.admirePost(id);
+        dispatch({type: 'UPDATE_POST', payload: data});
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export const deletePost = (id) => async (dispatch) => {
     try {
         await api.deletePost(id);
