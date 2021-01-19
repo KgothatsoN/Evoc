@@ -29,6 +29,16 @@ export const createPost = async (request, response) => {
     }
 }
 
+export const deletePost = async (request, response) =>{
+    const {id} = request.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) return response.status(404).send('Post Not Found!');
+    await PostMsg.findByIdAndRemove(id);
+    
+    response.json({message: 'Post Delete!'});
+    
+}
+
 export const updatePost = async (request, response) => {
     const {id: _id} = request.params;
     const post = request.body;
