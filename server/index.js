@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import express from 'express';
+import express, { request, response } from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
@@ -8,6 +8,7 @@ import postRoutes from './routes/posts.js';
 const app = express();
 dotenv.config();
 
+
 //BodyParser for populating and sending requests
 app.use(bodyParser.json({limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
@@ -15,6 +16,9 @@ app.use(cors());
 
 //Connect to application 
 app.use('/posts', postRoutes);
+app.get('/', (request, response) => {
+    response.send('Evoc API');
+})
 
 //MongoDB connection URL
 // const CON_URL = 'mongodb+srv://Kgothatso:18Borthwick@cluster0.1a6fc.mongodb.net/<dbname>?retryWrites=true&w=majority';

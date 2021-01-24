@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Container, AppBar, Typography, Grow, Grid} from '@material-ui/core';
-import envoc from './images/envoc.png';
+import evoc from './images/evoc.png';
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
 import useStyles from './styles';
@@ -20,8 +20,8 @@ const App = () => {
     return (
         <Container maxWidth="lg">
             <AppBar  className={classes.titleBar} position="static" color="inherit">
-                <img className={classes.image} src={envoc} alt="envoc" height="50"/>
-                <Typography className={classes.heading} variant="h2" align="center">Envoc</Typography>
+                <img className={classes.image} src={evoc} alt="evoc" height="50"/>
+                <Typography className={classes.heading} variant="h2" align="center">Evoc</Typography>
             </AppBar>
             <Grow in>
                 <Container>
