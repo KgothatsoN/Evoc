@@ -7,8 +7,8 @@ Evoc is a Full Stack MERN social media applicaiton, meant for sharing and recall
 # Technologies 
 
 ### MERN Full Stack
-* MongoDB - Evoc uses MongoDb as it's database solution. Data stored includes but is not limited to Creator, Title and Post Images.
-* Express(.js) - Evoc uses Node.js Web Framework to process GET and POST requests.
+* MongoDB - Evoc uses MongoDB as it's database solution. Data stored includes but is not limited to Creator, Title and Post Images.
+* Express(.js) - Evoc uses Express.js and Node.js Web Framework to process GET and POST requests.
 * React(.js) - Evoc's interface was built using React's client-side JavaScript framework.
 * Node(.js) -  JavaScript Web Server.
 
