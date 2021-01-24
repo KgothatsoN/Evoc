@@ -16,7 +16,7 @@ Evoc is a Full Stack MERN social media applicaiton, meant for sharing and recall
 Evoc was built with the aid of [JavaScript Mastery](https://www.completepathtojavascriptmastery.com/), a programming course site dedicated to providing comprehensive guides in JavaScript for both beginners and experts. As this was my first JavaScript project, I used the tutorial as a base for building my knowledge. If a piece of technology was used I would then go off and research before returning to the course.
 
 # Final Deploy
-To visit the final build of Evoc click [HERE](https://zen-pare-e3c411.netlify.app/).
+To visit the final build of Evoc click [HERE](https://evoc.netlify.app/).
 
 
 **Version 1.0.1**
