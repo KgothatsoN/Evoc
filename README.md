@@ -1,1 +1,1 @@
-# Evoc-MERN
+# Evoc
