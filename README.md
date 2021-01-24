@@ -1,6 +1,6 @@
 # [Evoc](https://zen-pare-e3c411.netlify.app/)
 
-Evoc is a Full Stack MERN social media applicaiton, meant for sharing and recalling events around the world. Evoc allows users to create, update, delete and admire posts on the site.
+Evoc is a Full Stack MERN social media applicaiton, meant for sharing and recalling events around the world. Evoc allows users to create, update, delete, edit and admire posts on the site.
 
 # Technologies 
 
