@@ -22,6 +22,3 @@ Evoc was built with the aid of [JavaScript Mastery](https://www.completepathtoja
 # Final Deploy
 To visit the final build of Evoc click [HERE](https://evoc.netlify.app/).
 
-
-**Version 1.0.1**
-- Kgothatso Ntuli
